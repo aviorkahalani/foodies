@@ -1,3 +1,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .page {
+    @apply container flex-1 mx-auto p-4 lg:max-w-5xl flex flex-col gap-6;
+  }
+}
+
+a {
+  transition: 0.2s ease-in;
+}
+
+a.active {
+  @apply text-amber-600;
+}
+
+.hero {
+  background-image: url('./assets/cocktail.jpg');
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
