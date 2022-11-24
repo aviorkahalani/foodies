@@ -4,11 +4,12 @@ export const storageService = {
   query,
   getById,
   post,
+  postMany,
   put,
   remove,
 }
 
-function query(entityType, delay = 1000) {
+function query(entityType, delay = 0) {
   var entities = utilService.loadFromStorage(entityType) || []
   return new Promise((resolve) => {
     setTimeout(() => {
@@ -33,6 +34,15 @@ async function post(entityType, newEntity) {
     entities.push(newEntity)
     utilService.saveToStorage(entityType, entities)
     return newEntity
+  } catch (err) {
+    console.error(err)
+  }
+}
+
+async function postMany(entitiesType, entities) {
+  try {
+    utilService.saveToStorage(entitiesType, entities)
+    return entitiesType
   } catch (err) {
     console.error(err)
   }

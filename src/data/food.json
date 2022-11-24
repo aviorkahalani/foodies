@@ -1,5 +1,6 @@
 [
   {
+    "_id": "caab33ec-2a31-43ad-a870-7b244c805775",
     "name": "Crock Pot Roast",
     "ingredients": [
       {
@@ -36,9 +37,13 @@
     ],
     "timers": [0, 0, 0, 420],
     "imageURL": "http://img.sndimg.com/food/image/upload/w_266/v1/img/recipes/27/20/8/picVfzLZo.jpg",
-    "originalURL": "http://www.food.com/recipe/to-die-for-crock-pot-roast-27208"
+    "originalURL": "http://www.food.com/recipe/to-die-for-crock-pot-roast-27208",
+    "category": "meat",
+    "level": 3,
+    "preparationTime": 45
   },
   {
+    "_id": "36fca94e-351b-4aa9-83a4-fa541d18235e",
     "name": "Roasted Asparagus",
     "ingredients": [
       {
@@ -71,9 +76,13 @@
     ],
     "timers": [0, 0, 0, 0, 0, 0, 10, 0, 0, 0],
     "imageURL": "http://img.sndimg.com/food/image/upload/w_266/v1/img/recipes/50/84/7/picMcSyVd.jpg",
-    "originalURL": "http://www.food.com/recipe/roasted-asparagus-50847"
+    "originalURL": "http://www.food.com/recipe/roasted-asparagus-50847",
+    "category": "vegetarian",
+    "level": 2,
+    "preparationTime": 20
   },
   {
+    "_id": "33c2a966-1208-458d-83eb-6ba366383ded",
     "name": "Curried Lentils and Rice",
     "ingredients": [
       {
@@ -110,9 +119,13 @@
       "Enjoy!"
     ],
     "timers": [0, 0, 20, 20, 0],
-    "imageURL": "http://dagzhsfg97k4.cloudfront.net/wp-content/uploads/2012/05/lentils3.jpg"
+    "imageURL": "https://minimalistbaker.com/wp-content/uploads/2017/09/AMAZING-Coconut-Curried-Golden-Lentils-20-minutes-healthy-SO-satisfying-vegan-lentil-curry-plantbased-coconut-dairyfree-glutenfree-12-768x1152.jpg",
+    "category": "vegetarian",
+    "level": 1,
+    "preparationTime": 20
   },
   {
+    "_id": "47453fbd-bff4-464c-9a00-efa4dc7de83d",
     "name": "Big Night Pizza",
     "ingredients": [
       {
@@ -166,9 +179,13 @@
       "Enjoy!"
     ],
     "timers": [15, 60, 0, 0, 0, 15, 0],
-    "imageURL": "http://upload.wikimedia.org/wikipedia/commons/c/c7/Spinach_pizza.jpg"
+    "imageURL": "http://upload.wikimedia.org/wikipedia/commons/c/c7/Spinach_pizza.jpg",
+    "category": "dairy",
+    "level": 1,
+    "preparationTime": 15
   },
   {
+    "_id": "d8bf3f7c-dbf0-4a4b-9811-2805448ac815",
     "name": "Cranberry and Apple Stuffed Acorn Squash Recipe",
     "ingredients": [
       {
@@ -214,9 +231,13 @@
     ],
     "timers": [0, 0, 0, 30, 0, 0, 30, 0],
     "imageURL": "http://elanaspantry.com/wp-content/uploads/2008/10/acorn_squash_with_cranberry.jpg",
-    "originalURL": ""
+    "originalURL": "",
+    "category": "vegetarian",
+    "level": 3,
+    "preparationTime": 30
   },
   {
+    "_id": "063f300f-9124-41a7-80b9-890afc53cb2a",
     "name": "Mic's Yorkshire Puds",
     "ingredients": [
       {
@@ -253,9 +274,13 @@
     ],
     "timers": [0, 0, 0, 30, 0, 0, 5, 0, 30],
     "imageURL": "http://upload.wikimedia.org/wikipedia/commons/f/f9/Yorkshire_Pudding.jpg",
-    "originalURL": "http://upload.wikimedia.org/wikipedia/commons/f/f9/Yorkshire_Pudding.jpg"
+    "originalURL": "http://upload.wikimedia.org/wikipedia/commons/f/f9/Yorkshire_Pudding.jpg",
+    "category": "pastry",
+    "level": 2,
+    "preparationTime": 25
   },
   {
+    "_id": "4e81a18a-369e-4ddb-8e49-213bc5227f64",
     "name": "Old-Fashioned Oatmeal Cookies",
     "ingredients": [
       {
@@ -333,9 +358,13 @@
     ],
     "timers": [15, 0, 0, 0, 0, 0, 0, 0, 8, 0],
     "imageURL": "http://s3.amazonaws.com/gmi-digital-library/65caecf7-a8f7-4a09-8513-2659cf92871e.jpg",
-    "originalURL": "#"
+    "originalURL": "#",
+    "category": "pastry",
+    "level": 1,
+    "preparationTime": 45
   },
   {
+    "_id": "b7faa81e-02de-4ca9-a6d0-5f4aba1f4bc9",
     "name": "Blueberry Oatmeal Squares",
     "ingredients": [
       {
@@ -400,10 +429,14 @@
       "(Make-ahead: Cover and refrigerate for up to 2 days or overwrap with heavy-duty foil and freeze for up to 2 weeks.)"
     ],
     "timers": [10, 1, 60, 0, 0, 45, 0, 0],
-    "imageURL": "http://www.canadianliving.com/img/photos/biz/blueberry-oatmeal-squares5801359401371.jpg",
-    "originalURL": "http://www.canadianliving.com/food/blueberry_oatmeal_squares.php"
+    "imageURL": "https://delightfuladventures.com/wp-content/uploads/2022/01/blueberries-and-cream-oatmeal.jpg",
+    "originalURL": "http://www.canadianliving.com/food/blueberry_oatmeal_squares.php",
+    "category": "dairy",
+    "level": 3,
+    "preparationTime": 10
   },
   {
+    "_id": "cf2de30d-edc6-4143-a221-bc8458caa9bc",
     "name": "Curried chicken salad",
     "ingredients": [
       {
@@ -480,6 +513,9 @@
     ],
     "timers": [0, 0, 0, 6, 0, 0, 0, 0, 0],
     "imageURL": "http://www.chatelaine.com/wp-content/uploads/2013/05/Curried-chicken-salad.jpg",
-    "originalURL": "http://www.chatelaine.com/recipe/stovetop-cooking-method/curried-chicken-salad/"
+    "originalURL": "http://www.chatelaine.com/recipe/stovetop-cooking-method/curried-chicken-salad/",
+    "category": "meat",
+    "level": 3,
+    "preparationTime": 30
   }
 ]
