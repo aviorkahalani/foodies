@@ -19,7 +19,7 @@ export const router = createBrowserRouter([
         element: <ExplorePage />,
       },
       {
-        path: '/detail',
+        path: '/detail/:id',
         element: <DetailPage />,
       },
       {

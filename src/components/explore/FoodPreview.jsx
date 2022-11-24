@@ -1,8 +1,17 @@
+import { useNavigate } from 'react-router-dom'
 import { BsHandThumbsUp, BsClock } from 'react-icons/bs'
 
 export const FoodPreview = ({ food }) => {
+  let navigate = useNavigate()
+
+  const navigateToRecipe = () => {
+    navigate('/detail/' + food._id)
+  }
+
   return (
-    <article className="flex flex-col gap-1 drop-shadow cursor-pointer rounded-md overflow-hidden transition-all md:hover:drop-shadow-md">
+    <article
+      onClick={navigateToRecipe}
+      className="flex flex-col gap-1 cursor-pointer rounded-md overflow-hidden">
       <div className="thumbnail ">
         <img
           className="aspect-square object-cover w-full"

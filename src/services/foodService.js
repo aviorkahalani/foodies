@@ -1,6 +1,5 @@
 import { storageService } from './storageService'
 import foodDB from '../data/food.json'
-import { utilService } from './utilService'
 
 export const foodService = {
   query,
@@ -21,8 +20,6 @@ async function query(filterBy = {}) {
       )
     }
 
-    console.log('filterBy', filterBy)
-
     if (filterBy.categories) {
       if (Object.values(filterBy.categories).includes(true)) {
         filteredFoods = filteredFoods.filter((food) => filterBy.categories[food.category])
@@ -35,4 +32,10 @@ async function query(filterBy = {}) {
   }
 }
 
-async function getById() {}
+async function getById(foodId) {
+  try {
+    return await storageService.getById(STORAGE_KEY, foodId)
+  } catch (error) {
+    console.error(error)
+  }
+}

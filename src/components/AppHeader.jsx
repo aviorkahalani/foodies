@@ -8,7 +8,7 @@ export const AppHeader = () => {
       <nav className="flex gap-5">
         <NavLink to="/">Home</NavLink>
         <NavLink to="/explore">Explore</NavLink>
-        <NavLink to="/about">About</NavLink>
+        {/* <NavLink to="/about">About</NavLink> */}
       </nav>
     </header>
   )
