@@ -7,13 +7,13 @@ export const foodService = {
 }
 
 const STORAGE_KEY = 'food_db'
+_createFoods()
 
 async function query(filterBy = {}) {
   try {
     let foods = await storageService.query(STORAGE_KEY)
-    if (!foods || !foods.length) await storageService.postMany(STORAGE_KEY, foodDB)
-
     let filteredFoods = foods
+
     if (filterBy.name) {
       filteredFoods = filteredFoods.filter((food) =>
         food.name.toLowerCase().includes(filterBy.name.toLowerCase())
@@ -38,4 +38,8 @@ async function getById(foodId) {
   } catch (error) {
     console.error(error)
   }
+}
+
+async function _createFoods() {
+  await storageService.postMany(STORAGE_KEY, foodDB)
 }
