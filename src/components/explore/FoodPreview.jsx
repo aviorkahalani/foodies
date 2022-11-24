@@ -2,7 +2,7 @@ import { BsHandThumbsUp, BsClock } from 'react-icons/bs'
 
 export const FoodPreview = ({ food }) => {
   return (
-    <article className="flex flex-col gap-1 drop-shadow-md cursor-pointer rounded-md overflow-hidden transition-all md:hover:scale-[102%]">
+    <article className="flex flex-col gap-1 drop-shadow cursor-pointer rounded-md overflow-hidden transition-all md:hover:drop-shadow-md">
       <div className="thumbnail ">
         <img
           className="aspect-square object-cover w-full"
@@ -15,7 +15,7 @@ export const FoodPreview = ({ food }) => {
           <BsClock /> {food.preparationTime} minutes
         </span>
         {food.level === 1 && (
-          <span className="flex items-center gap-1">
+          <span className="flex items-center gap-1 text-green-500">
             <BsHandThumbsUp />
             super easy!
           </span>

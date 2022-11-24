@@ -4,6 +4,12 @@ import { BsSearch } from 'react-icons/bs'
 export const FoodFilter = ({ onSetFilter }) => {
   const [filterBy, setFilterBy] = useState({
     name: '',
+    categories: {
+      dairy: false,
+      meat: false,
+      pastry: false,
+      vegetarian: false,
+    },
   })
 
   const handleChange = ({ target }) => {
@@ -15,21 +21,30 @@ export const FoodFilter = ({ onSetFilter }) => {
     }))
   }
 
+  const handleCheckboxChange = ({ target }) => {
+    const { name } = target
+    setFilterBy((prevFilterBy) => ({
+      ...prevFilterBy,
+      categories: {
+        ...prevFilterBy.categories,
+        [name]: !prevFilterBy.categories[name],
+      },
+    }))
+  }
+
   const onSubmitForm = (ev) => {
     ev.preventDefault()
     onSetFilter(filterBy)
   }
 
   return (
-    <form onSubmit={onSubmitForm} className="flex flex-col gap-3 flex-1">
+    <form onSubmit={onSubmitForm} className="flex flex-col gap-5 flex-1">
       <div>
         <h2 className="font-bold font-serif text-2xl">Filter Recipes</h2>
         <p className="text-sm text-gray-400">
           Check multiple boxes below to narrow down the results
         </p>
       </div>
-
-      {/* By Category */}
 
       <div>
         <h3 className="font-bold font-serif text-lg">Search Titles</h3>
@@ -45,6 +60,17 @@ export const FoodFilter = ({ onSetFilter }) => {
           <button className="p-3 text-white bg-black">
             <BsSearch />
           </button>
+        </div>
+      </div>
+      <div>
+        <h3 className="font-bold font-serif text-lg">By Categories</h3>
+        <div className="flex flex-col gap-2">
+          {Object.keys(filterBy.categories).map((c, idx) => (
+            <label key={idx} className="flex items-center gap-2" htmlFor={c}>
+              <input type="checkbox" name={c} id={c} onChange={handleCheckboxChange} />
+              {c}
+            </label>
+          ))}
         </div>
       </div>
     </form>

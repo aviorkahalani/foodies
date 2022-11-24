@@ -21,6 +21,14 @@ async function query(filterBy = {}) {
       )
     }
 
+    console.log('filterBy', filterBy)
+
+    if (filterBy.categories) {
+      if (Object.values(filterBy.categories).includes(true)) {
+        filteredFoods = filteredFoods.filter((food) => filterBy.categories[food.category])
+      }
+    }
+
     return filteredFoods
   } catch (error) {
     console.error(error)
