@@ -36,7 +36,7 @@ export const Testimonies = () => {
       {testimonies.map((testimony) => (
         <article
           key={testimony._id}
-          className="flex flex-col gap-2 rounded p-3 bg-gray-100 shadow-sm">
+          className="flex flex-col gap-2 rounded p-3 bg-gray-100 drop-shadow-md">
           <p>{testimony.content}</p>
           <div className="flex flex-col items-start justify-start">
             <img
